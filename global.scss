@@ -1,0 +1,95 @@
+
+@import "./styles/section/header";
+@import "./styles/utils/variables";
+@import "./styles/utils/mixin";
+@import "./styles/section/hero";
+@import "./styles/section/features";
+@import "./styles/section/chef";
+@import "./styles/section/instagram";
+@import "./styles/section/recipes";
+@import "./styles/section/footer";
+@import "./styles/section/info";
+@import "./styles/section/mixed";
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Inter-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Bold.woff2') format('woff2'),
+      url('/assets/fonts/Inter-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-SemiBold.woff2') format('woff2'),
+      url('/assets/fonts/Inter-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Medium.woff2') format('woff2'),
+      url('/assets/fonts/Inter-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: $bg-color;
+  color: $textColor;
+  line-height: 28px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 100%;
+  max-width: 1440px;
+  padding-right: 80px;
+  padding-left: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
